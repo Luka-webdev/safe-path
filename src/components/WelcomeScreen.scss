@@ -1,0 +1,55 @@
+.wrapper {
+    width:100vw;
+    height:100vh;
+    background-image: radial-gradient(#1e272e,black);
+    display: flex;
+    .content {
+        margin:auto;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        h1 {
+            margin:0;
+            padding-bottom: 2vw;
+            font-size: 8vw;
+            color:white;
+            font-family: 'Chango', cursive;
+            background-image: url('text-bgc.jpg');
+            background-clip: text;
+            color:transparent;
+        }
+        p {
+            position:relative;
+            width:100%;
+            height:4vw;
+            text-align: center;
+            i {
+                position:absolute;
+                top:0;
+                left:50%;
+                transform: translateX(-50%);
+                color:white;
+                font-size: 4vw; 
+                animation:animation1 1s linear alternate infinite;
+
+            }
+        }
+        button {
+            font-family: 'Fredoka One', cursive;
+            font-size: 3vw;
+            padding:1vw 2vw;
+            &:hover {
+                cursor:pointer;
+            }
+        }
+    }
+}
+
+@keyframes animation1{
+    0%{
+        top:0px;
+    }
+    100%{
+        top:15px;
+    }
+}
